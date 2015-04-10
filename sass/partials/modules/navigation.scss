@@ -1,0 +1,8 @@
+nav {
+	list-style: none;
+}
+nav li {
+	display: inline-block; 
+	@include font-size(20);
+	margin-right: 15px;
+}

@@ -1,0 +1,39 @@
+header {
+	background: $destacado1;
+	color: $title;
+	padding-top: 30px;
+}
+
+.face {
+	background: url(../img/facebook.png) no-repeat;
+}
+
+.face, .twit {
+	background-size: 100% auto;
+	height: 40px;
+	margin-right: 15px;
+	text-indent: -9999px;
+	width: 40px;
+}
+
+.follow-header {
+	display: inline-block;
+	float: right;
+	margin-top: 15%;
+	text-align: center;
+	width: 30%;
+
+	p {
+		display: inline-block;
+		margin-right: 35px;
+	}
+}
+
+.main-header {
+	display: inline-block;
+	width: 65%;
+}
+
+.twit {
+	background: url(../img/twitter.png) no-repeat;
+}

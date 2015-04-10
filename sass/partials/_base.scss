@@ -1,0 +1,133 @@
+// 
+// Estilos para los elementos base
+//
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: $main-text;
+  font-family: $sans;
+}
+
+a {
+  color: $destacado1;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+aside {
+  article {
+    margin-bottom: 50px;
+  }
+  a {
+    display: block;
+  }
+}
+
+
+h1 {
+	@include font-size(40);
+  margin-top: 0;
+	text-transform: uppercase;
+}
+
+p{
+  @include font-size(17);
+}
+
+.first-new {
+  p {
+    display: block;
+    float: none;
+  }
+  .read-more{
+    margin-left: 0;
+  }
+}
+
+.info-new {
+  p {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.btn-more { 
+  border-radius: 5px;
+  background: $destacado1;
+  color: $title;
+  margin-left: 33%;
+  @include font-size(12);
+  padding: 12.5px 50px;
+}
+
+.fifth-new{
+  margin-bottom: 30px;
+}
+
+.mas-popular {
+  a{
+    @include info-aside;
+  }
+
+  p {
+      margin: 14.5% 0 10px 14.5%;
+  }
+
+  img {
+    background: $background2;
+    height: 250px;
+    margin: 0 14.5% 0;
+    width: 220px;    
+  }
+}
+
+.news article {
+  img {
+    background: $background2;
+    float: left;
+    height: 150px; 
+    margin-right: 20px;
+    width: 30%;
+  }
+  &:first-child img {
+  float: none;
+  height: 100%;
+  width: 100%;
+  }
+}
+
+.other-articles {
+  @include info-aside;
+  a { 
+    border-bottom: 1px solid $border;
+    color: $destacado2;
+    @include font-size(12);
+    padding-bottom: 15px; 
+  }
+}
+
+.title-aside {
+  color: $destacado1;
+  @include font-size(16);
+  border-bottom:2px solid $destacado1;
+}
+
+.title-new{
+  @include font-size(26);
+}
+
+.read-more {
+  @include read-more;
+}
+

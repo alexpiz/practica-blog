@@ -1,0 +1,23 @@
+//
+// Mixins
+//
+
+// font-size mixin
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// read-more
+@mixin read-more {
+  @include font-size(14);
+  font-weight: bold;
+}
+
+//main <a>'s aside
+@mixin info-aside {
+	color: $main-text;
+    @include font-size(14);
+    font-weight: bold;
+    padding: 15px 0;
+}

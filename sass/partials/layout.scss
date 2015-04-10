@@ -1,0 +1,31 @@
+aside {
+	float: right;
+	  padding: 140px 160px 0 20px;
+	width: 42%;
+}
+
+header {
+    height: 300px;
+}
+
+.content-position {
+    margin: 0 auto;
+    max-width: $content-width;
+}
+
+.first-new {
+    margin-top: -15%;
+}
+
+.news {
+	float: left;
+	margin-left: 12%;
+	padding: 0 20px 20px;
+	width: 45%;
+}
+
+.news article {
+    background: $background;
+    border-bottom: 1px solid $border;
+    padding:20px 20px 40px 20px;
+}
